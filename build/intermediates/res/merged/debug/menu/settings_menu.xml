@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/connect"
+        android:checkable="true"
+        android:title="Connect" />
+    <item
+        android:id="@+id/Video_off"
+        android:checkable="true"
+        android:title="Video_off" />
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/planeXY"
+            android:title="XY plane" />
+        <item
+            android:id="@+id/planeYZ"
+            android:title="YZ plane" />
+        <item
+            android:id="@+id/planeZX"
+            android:title="ZX plane" />
+    </group>
+
+</menu>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="actionlib_msgs-1.12.5">
+    <CLASSES>
+      <root url="jar:///opt/ros/kinetic/share/maven/org/ros/rosjava_messages/actionlib_msgs/1.12.5/actionlib_msgs-1.12.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

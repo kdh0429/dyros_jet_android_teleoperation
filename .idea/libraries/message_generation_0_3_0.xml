@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="message_generation-0.3.0">
+    <CLASSES>
+      <root url="jar:///opt/ros/kinetic/share/maven/org/ros/rosjava_bootstrap/message_generation/0.3.0/message_generation-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

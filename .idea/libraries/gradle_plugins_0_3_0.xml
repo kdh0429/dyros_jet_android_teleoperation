@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gradle_plugins-0.3.0">
+    <CLASSES>
+      <root url="jar:///opt/ros/kinetic/share/maven/org/ros/rosjava_bootstrap/gradle_plugins/0.3.0/gradle_plugins-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

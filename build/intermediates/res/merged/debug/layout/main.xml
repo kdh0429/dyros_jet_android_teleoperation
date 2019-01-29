@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0">
+
+        <org.ros.android.view.RosImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon"></org.ros.android.view.RosImageView>
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <TabHost
+        android:id="@+id/tabHost1"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--첫 번째 페이지. content1-->
+                <LinearLayout
+                    android:id="@+id/JoyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/buttonModechange"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/shape"
+                        android:scaleType="fitCenter"
+                        android:text="Mode change button"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="6.0"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/mode0" />
+
+                </LinearLayout>
+
+                <!-- 두 번째 페이지. content2 -->
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/TaskLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewLeft"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="Left Arm"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewRight"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="Right Arm"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonUpL"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Up"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonDownL"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Down"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonUpR"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Up"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonDownR"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Down"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonLeftL"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Left"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonRightL"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Right"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonLeftR"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Left"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonRightR"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Right"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonForwardL"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Forward"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonBackwardL"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Backward"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+                        <Button
+                            android:id="@+id/buttonForwardR"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Forward"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/buttonBackwardR"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:text="Backward"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switchArm"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="Left/Right"
+                            android:textSize="12sp" />
+
+                        <Switch
+                            android:id="@+id/switchDirection"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="CW/CCW"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonRoll"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:text="Roll"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/buttonPitch"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:text="Pitch"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/buttonYaw"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:text="Yaw"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editTextWalkdistance_x"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:hint="Set x (m)"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/editTextWalkdistance_y"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:hint="Set y (m)"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/editTextWalkdistance_theta"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:hint="Set theta (radian)"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/buttonWalk"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:text="Walk"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 세 번째 페이지. content3 -->
+                <RelativeLayout
+                    android:id="@+id/DragLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textViewDrag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="TextView" />
+
+                    <Button
+                        android:id="@+id/buttonDrag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textViewDrag"
+                        android:text="Drag to move arm" />
+                </RelativeLayout>
+
+                <!--  네번째 페이지. content5-->
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Gyrolayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="2.0"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonComplement_L"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:text="Button Left arm"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonComplement_R"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:text="Button Right arm"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/buttonProximity_U"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.0dp"
+                                android:layout_weight="1.0"
+                                android:text="Proximity_UP"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/buttonProximity_D"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.0dp"
+                                android:layout_weight="1.0"
+                                android:text="Proximity_Down"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="4.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textviewComplement_L"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1.0"
+                            android:text="Click button above to move left arm"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textviewComplement_R"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1.0"
+                            android:text="Click button above to move right arm"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textviewProximity"
+                            android:layout_width="0.0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1.0"
+                            android:text="proximity"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--  다번째 페이지. content5-->
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/FootLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <view
+                        android:id="@+id/myview"
+                        class="org.ros.android.android_tutorial_teleop.MyView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/textViewtest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Blue: L Red: R"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+               <!--  여섯번째 페이지. content6-->
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/GPSlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/buttonGPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:text="GPS"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textviewGPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

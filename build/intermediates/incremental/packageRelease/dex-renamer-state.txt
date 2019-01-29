@@ -1,0 +1,4 @@
+#Fri Jul 14 02:21:18 KST 2017
+base.0=/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

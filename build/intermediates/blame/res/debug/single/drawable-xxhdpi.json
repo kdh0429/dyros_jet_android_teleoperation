@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-xxhdpi/mode2.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-xxhdpi/mode2.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-xxhdpi/footprint.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-xxhdpi/footprint.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_name.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-xxhdpi/ic_action_name.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-xxhdpi/tilt.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-xxhdpi/tilt.png"
+    }
+]

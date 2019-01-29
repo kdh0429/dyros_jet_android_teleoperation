@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nav_msgs-1.12.5">
+    <CLASSES>
+      <root url="jar:///opt/ros/kinetic/share/maven/org/ros/rosjava_messages/nav_msgs/1.12.5/nav_msgs-1.12.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/mode1.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/mode1.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/icon.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/joystick.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/joystick.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/mode0.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/mode0.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/gps.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/gps.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/drag.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/drag.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/touch.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/touch.png"
+    },
+    {
+        "merged": "/home/kim/android_core/src/android_core/android_tutorial_teleop/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_name.png",
+        "source": "/home/kim/android_core/src/android_core/android_tutorial_teleop/src/main/res/drawable-hdpi/ic_action_name.png"
+    }
+]
